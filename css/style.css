@@ -22,10 +22,25 @@
    box-sizing: border-box;
 }
 
+html {
+   scroll-snap-type: mandatory;
+   scroll-snap-points-y: repeat(100vh);
+   scroll-snap-type: y mandatory;
+}
+
 body{
    margin: 0;
    background: #100e17;
    font-family: "comfortaa-regular", Helvetica;
+}
+
+main{
+   margin-left: 5rem;
+}
+
+section {
+   height: 100vh;
+   scroll-snap-align: start;
 }
 
 
@@ -102,15 +117,7 @@ header{
    display: block;
 }
 
-main{
-   margin-left: 5rem;
-}
-
-
-.block{
-   display: inline-block;
-   background: #CCC;
-   width: 100px;
-   height: 100px;
-   margin: 50px;
+section h1{
+   color: white;
+   font-family: "comfortaa-bold", Helvetica;
 }
