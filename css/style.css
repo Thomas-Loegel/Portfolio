@@ -1,0 +1,85 @@
+/* Global */
+*, *:before, *:after{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   background: #000;
+   font-family: 'Comfortaa', cursive;
+   font-weight: 700;
+}
+
+
+/* Header */
+header{
+   position: relative;
+   display: inline-block;
+   width: 80px;
+   height: 100vh;
+   background: #fff;
+}
+
+
+.burger{
+   display: inline-block;
+   width: 5rem;
+   height: 5rem;
+   cursor: pointer;
+}
+
+.burger span{
+   display: block;
+   margin: 0.4rem 1rem;
+   width: 2.5rem;
+   height: 0.3rem;
+   border-radius: 50px;
+   background: #444;
+}
+.burger span:nth-child(1){
+   margin-top: 2rem;
+}
+
+.burger:hover span:nth-child(1){
+   transform: translate(0.3125rem,0);
+   transition: 0.1s ease;
+}
+.burger:hover span:nth-child(2){
+   transform: translate(-0.3125rem,0);
+   transition: 0.1s ease;
+}
+
+.contact{
+   position: absolute;
+   bottom: 0;
+}
+
+.contact a{
+   display: inline-block;
+   margin-bottom: 2rem;
+   transform: rotate(-90deg);
+   text-transform: uppercase;
+   line-height: 5rem;
+   font-size: 1rem;
+   text-decoration: none;
+   color: #444;
+   transition: 0.5s ease;
+}
+
+.contact a:hover{
+   margin-bottom: 3rem;
+}
+
+.icons{
+   display: none;
+   margin: 0;
+   padding: 0;
+}
+
+.icons li{
+   list-style: none;
+}
+
+.icons li a{
+   display: block;
+}
