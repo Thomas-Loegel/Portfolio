@@ -63,56 +63,39 @@ header{
    background: #fff;
 }
 
-.burger{
-   display: inline-block;
-   width: 5rem;
-   height: 5rem;
-   cursor: pointer;
+.burger-nav{
+   margin-top: 1rem;
 }
 
-.burger span{
+#burger{
    display: block;
-   margin: 0.4rem 1rem;
-   width: 2.5rem;
-   height: 0.3rem;
-   border-radius: 50px;
-   background: #444;
-}
-.burger span:nth-child(1){
-   margin-top: 2rem;
+   cursor: pointer;
+   margin: 0 auto;
 }
 
-.burger:hover span:nth-child(1){
-   transform: translate(0.3125rem,0);
-   transition: 0.1s ease;
-}
-.burger:hover span:nth-child(2){
-   transform: translate(-0.3125rem,0);
-   transition: 0.1s ease;
-}
 
 .social{
    position: absolute;
    bottom: 0;
    width: 5rem;
+   height: 100px;
 }
 
 .social a{
-   display: inline-block;
-   margin-left: 0.5rem;
-   margin-bottom: 1rem;
+   display: block;
+   width: 100%;
    transform: rotate(-90deg);
    text-transform: uppercase;
    line-height: 5rem;
    font-family: "comfortaa-light", Helvetica;
    font-size: 1rem;
    text-decoration: none;
-   color: #444;
+   color: #333;
    transition: 0.5s ease;
 }
 
 .social a:hover{
-   margin-bottom: 2rem;
+   
 }
 
 .icons{
