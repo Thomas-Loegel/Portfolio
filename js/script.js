@@ -18,3 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
       button.classList.toggle('show');
    });
 });
+
+
+
+const button = document.querySelector('.burger-button');
+const onClick = function() {
+  button.classList.toggle('is-active');
+};
+
+button.addEventListener('click', onClick, false);

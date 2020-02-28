@@ -70,14 +70,37 @@ header{
    background: #fff;
 }
 
-.burger-nav{
-   margin-top: 1rem;
+.burger-button{
+   cursor: pointer;
 }
 
-#burger{
-   display: block;
-   cursor: pointer;
-   margin: 0 auto;
+.burger-button svg{
+
+}
+
+.burger-button:focus{
+   outline: 0;
+}
+
+.burger-button rect {
+  transition: all .25s;
+  width: calc(100% - 30px);
+}
+
+.burger-button.is-active .burger-top-bar{
+   transform: translate(-3px, 23px) rotate(-45deg) scaleX(.7);
+}
+
+.burger-button.is-active .burger-middle-bar{
+   transform: scaleX(.99);
+}
+
+.burger-button.is-active .burger-bottom-bar{
+  transform: translate(35px, -7px) rotate(45deg) scaleX(.7)
+}
+
+.burger:hover{
+   fill: #111;
 }
 
 .social-button{
@@ -86,12 +109,14 @@ header{
    bottom: 3rem;
    left: 0.25rem;
    transform: rotate(-90deg);
+   transition: bottom 0.5s ease;
    font-family: "comfortaa-regular", Helvetica;
    font-size: 1.1rem;
+   line-height: 2rem;
    text-transform: uppercase;
    text-decoration: none;
    color: #666;
-   transition: bottom 0.5s ease;
+   cursor: pointer;
 }
 
 .social-button:hover{
@@ -99,7 +124,7 @@ header{
    color: #111;
 }
 
-/* Js Button */
+/* JS Button */
 #socialButton.show{
    bottom: 14rem;
    color: #111;
@@ -107,8 +132,8 @@ header{
 
 .social-button span{
    position: absolute;
-   bottom: 0.6rem;
-   left: -2.5rem;
+   bottom: 1rem;
+   left: -2.8rem;
    width: 2.2rem;
    height: 0.11rem;
    margin-right: 0.5rem;
@@ -124,7 +149,7 @@ header{
    transition: bottom 0.5s ease;
 }
 
-/* Js Menu */
+/* JS Menu */
 #socialMenu.show{
    bottom: -11rem;
 }
@@ -152,7 +177,7 @@ header{
 }
 
 .social-menu li a .svg-github:hover{
-   fill: #111;
+   fill: #333;
 }
 
 .social-menu li a .svg-linkedin{
@@ -168,15 +193,15 @@ header{
 }
 
 .social-menu li a .svg-mail:hover{
-   fill: #111;
+   fill: #f77500;
 }
 
 .social-menu li a .svg-cv{
    fill: #555;
 }
 
-.social-menu li a .svg-cv{
-   fill: #111;
+.social-menu li a .svg-cv:hover{
+   fill: #e35e25;
 }
 
 /* Présentation */
