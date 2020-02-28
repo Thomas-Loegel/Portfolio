@@ -70,37 +70,39 @@ header{
    background: #fff;
 }
 
-.burger-button{
+
+.burger{
+   display: block;
+   margin: 1rem 1.4rem;
    cursor: pointer;
 }
 
-.burger-button svg{
-
+.burger div{
+   height: 0.25rem;
+   background: #666;
+   border-radius: 0.4rem;
+   transition: 0.5s;
 }
 
-.burger-button:focus{
-   outline: 0;
+.burger:hover div {
+   background: #333;
+   width: 2rem;
 }
 
-.burger-button rect {
-  transition: all .25s;
-  width: calc(100% - 30px);
+.burger .middle-bar{
+   margin: 0.30rem 0;
 }
 
-.burger-button.is-active .burger-top-bar{
-   transform: translate(-3px, 23px) rotate(-45deg) scaleX(.7);
+.top-bar{
+   width: 2rem;
 }
 
-.burger-button.is-active .burger-middle-bar{
-   transform: scaleX(.99);
+.middle-bar{
+   width: 1rem;
 }
 
-.burger-button.is-active .burger-bottom-bar{
-  transform: translate(35px, -7px) rotate(45deg) scaleX(.7)
-}
-
-.burger:hover{
-   fill: #111;
+.bottom-bar{
+   width: 1.5rem;
 }
 
 .social-button{
@@ -138,6 +140,7 @@ header{
    height: 0.11rem;
    margin-right: 0.5rem;
    background: #555;
+   border-radius: 0.2rem;
 }
 
 .social-nav{
@@ -216,7 +219,7 @@ header{
    height: 250px;
    margin: 2rem;
    background: #fff;
-   border-radius: 0.1rem;
+   border-radius: 0.2rem;
 }
 
 /* Contact */

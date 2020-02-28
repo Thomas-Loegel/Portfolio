@@ -21,9 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const button = document.querySelector('.burger-button');
-const onClick = function() {
-  button.classList.toggle('is-active');
-};
-
-button.addEventListener('click', onClick, false);
+// Burger Effect
+// const button = document.querySelector('.burger-button');
+// const onClick = function() {
+//   button.classList.toggle('is-active');
+// };
+//
+// button.addEventListener('click', onClick, false);
