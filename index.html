@@ -21,7 +21,6 @@
          <div class="bottom-bar"></div>
       </a>
 
-
       <!-- Social -->
       <a id="socialButton" class="social-button"><span></span>social</a>
 
@@ -83,7 +82,6 @@
                   </svg>
                </a>
             </li>
-
             <li>
                <a href="#cv">
                   <svg class="svg-cv" version="1.1" id="Calque_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -114,7 +112,7 @@
             <p>
                Hello, <br>
                Je m'appelle <strong>Thomas</strong> et j'ai <strong>33ans</strong>. <br>
-               Je suis <strong>Développeur web & web mobile junior.</strong> <br>
+               Je suis <strong>Développeur web</strong> <br>
                <br>
                Étant quelqu'un de <strong>curieux</strong>, jai commencé à coder en <strong>autodidacte</strong> et ça à fini par devenir une <strong>passion</strong>, <br>
                j'ai vite compris que d'apprendre seul c'est bien ! Mais avoir de <strong>bonnes bases</strong> c'est mieux {texte slider} ! <br>
@@ -149,10 +147,16 @@
 
          <div class="wrap-contact">
             <form class="contact-form" action="">
-               <input class="input" name="name" type="text" placeholder="Nom">
-               <input class="input" name="mail" type="mail" placeholder="Mail">
-               <textarea class="textarea" name="message" placeholder="Message"></textarea>
-               <button class="button" type="button" name="button">Envoyer</button>
+               <label for="name">nom</label>
+               <input id="name" class="input" name="name" type="text">
+
+               <label for="mail">mail</label>
+               <input id="mail" class="input" name="mail" type="mail">
+
+               <label for="message">message</label>
+               <textarea id="message" class="textarea" name="message"></textarea>
+
+               <button class="button" type="button" name="button">envoyer</button>
             </form>
          </div>
       </section>
