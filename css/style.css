@@ -199,7 +199,7 @@ header{
 }
 
 .social-menu li a .svg-mail:hover{
-   fill: #f77500;
+   fill: #00cacb;
 }
 
 .social-menu li a .svg-cv{
@@ -231,27 +231,36 @@ header{
 
 /* Contact */
 .wrap-contact{
+   width: 50%;
    margin: 5rem auto;
    padding: 1rem;
 }
 
 .contact-form{
-   width: 50%;
    margin: 0 auto;
-   cursor: pointer;
 }
 
-.contact-form label{
+.wrap-input{
+   position:relative;
+   margin-bottom: 2rem;
+}
+
+.wrap-input label{
+   position: absolute;
+   top: 0.5rem;
+   left: 0;
    text-transform: capitalize;
    font-family: "open-sans-regular", Helvetica;
+   font-size: 1.2rem;
    font-weight: bolder;
    letter-spacing: 0.1rem;
+   cursor: text;
+   transition: 0.200s ease-in-out;
 }
 
-.contact-form .input, .textarea{
+.wrap-input .input, .textarea{
    width: 100%;
    height: 3rem;
-   margin-bottom: 1rem;
    padding: 0.5rem 0.1rem;
    font-family: "comfortaa-bold", Helvetica;
    font-size: 1rem;
@@ -259,29 +268,41 @@ header{
    transition: 0.110s ease-in-out;
 }
 
-.input[type=text],[type=mail]{
-   border: none;
-   border-bottom: 0.1rem solid #00cacb;
-   background: transparent;
-   font-family: "comfortaa-bold", Helvetica;
-   font-size: 1rem;
+.wrap-input .input:focus{
+   border-bottom: 0.2rem solid #19f6e8;
 }
 
-.input:focus{
-   border-bottom: 0.2rem solid #19f6e8;
+.wrap-input .input:focus ~ label{
+   top: -1rem;
+   font-size: 0.9rem;
 }
 
 .textarea{
-   height: 10rem;
+   height: 3rem;
    resize: none;
    overflow: auto;
-   border: none;
+   border: 0;
    border-bottom: 0.1rem solid #00cacb;
    background: transparent;
+   transition: 0.5s ease-in-out;
 }
 
 .textarea:focus{
+   height: 10rem;
    border-bottom: 0.2rem solid #19f6e8;
+}
+
+.wrap-input .textarea:focus ~ label{
+   top: -1rem;
+   font-size: 0.9rem;
+}
+
+.input[type=text],[type=email]{
+   border: 0;
+   border-bottom: 0.1rem solid #00cacb;
+   background: transparent;
+   font-family: "comfortaa-regular", Helvetica;
+   font-size: 1.1rem;
 }
 
 .button{
@@ -295,10 +316,11 @@ header{
    font-family: "open-sans-regular", Helvetica;
    font-size: 1rem;
    color: #fff;
+   outline: none;
    background: transparent;
    cursor: pointer;
    letter-spacing: 0.2rem;
-   transition: 0.110s ease-in-out;
+   transition: 0.2s ease-in-out;
 }
 
 .button:hover{
