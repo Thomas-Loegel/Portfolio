@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Cv Modal
-const modal = document.getElementById('myModal');
-const btn   = document.getElementById('myBtn');
+const modal = document.getElementById('modal');
+const btn   = document.getElementById('modalButton');
 const span  = document.getElementsByClassName('close')[0];
 
 btn.onclick = function() {
