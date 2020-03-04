@@ -288,43 +288,36 @@ header{
    font-weight: normal;
 }
 
+/* Compétences */
+.wrap-skill{
+
+}
+
 /* Projets */
 .wrapper-projet{
    display: flex;
    flex-wrap: wrap;
-   height: 100vh;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 .projet{
-   width: 50%;
-   height: 50%;
+   width: 40%;
+   height: 40%;
    overflow: hidden;
+   transition: 0.4s ease-in-out;
+}
+
+.projet:hover{
+   transform: perspective(30rem) translateZ(1rem);
 }
 
 .projet a img{
    width: 100%;
    min-height: 100%;
-
+   border-radius: 0.1rem;
 }
 
-.projet:nth-child(1){
-   background: #89d4d0;
-}
-
-.projet:nth-child(2){
-   background: #f3ab00;
-}
-
-.projet:nth-child(3){
-   background: #eaeaea;
-}
-
-.projet:nth-child(4){
-   background: #ffa5b4;
-}
-.projet:nth-child(5){
-   background: #d74329;
-}
 
 /* Contact */
 .wrapper-contact{
