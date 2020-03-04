@@ -2,10 +2,8 @@
 window.scrollBy({
    top: 100,
    left: 0,
-   behavior: 'smooth'
+   behavior: 'smooth',
 });
-
-
 
 
 // Social Menu Effect
@@ -21,14 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-// Cv Modal
+// Modal Effect
 const modal = document.getElementById('modal');
 const btn   = document.getElementById('modalButton');
 const span  = document.getElementsByClassName('close')[0];
 
-btn.onclick = function() {
+btn.onclick = function(e) {
+   e.preventDefault();
    modal.style.display = 'block';
 }
 

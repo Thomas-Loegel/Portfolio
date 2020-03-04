@@ -1,19 +1,38 @@
-/* Google Font */
+/* RUBIK */
 @font-face {
-   font-family: "comfortaa-light";
-   src: url("../asset/fonts/comfortaa-light.ttf");
+   font-family: "rubik-light";
+   src: url("../asset/fonts/rubik-light.ttf");
 }
 @font-face {
-   font-family: "comfortaa-regular";
-   src: url("../asset/fonts/comfortaa-regular.ttf");
+   font-family: "rubik-regular";
+   src: url("../asset/fonts/rubik-regular.ttf");
 }
+@font-face {
+   font-family: "rubik-medium";
+   src: url("../asset/fonts/rubik-medium.ttf");
+}
+@font-face {
+   font-family: "rubik-bold";
+   src: url("../asset/fonts/rubik-bold.ttf");
+}
+
+
+/* OPEN SANS */
 @font-face {
    font-family: "open-sans-regular";
    src: url("../asset/fonts/open-sans-regular.ttf");
 }
 @font-face {
-   font-family: "comfortaa-bold";
-   src: url("../asset/fonts/comfortaa-bold.ttf");
+   font-family: "open-sans-italic";
+   src: url("../asset/fonts/open-sans-italic.ttf");
+}
+@font-face {
+   font-family: "open-sans-semi-bold";
+   src: url("../asset/fonts/open-sans-semi-bold.ttf");
+}
+@font-face {
+   font-family: "open-sans-semi-bold-italic";
+   src: url("../asset/fonts/open-sans-semi-bold-italic.ttf");
 }
 
 
@@ -25,15 +44,14 @@
 }
 
 html {
+   scroll-behavior: smooth;
    scroll-snap-type: y mandatory;
-   scroll-snap-type: mandatory;
-   scroll-snap-points-y: repeat(100vh);
+   scroll-snap-points-y: repeat(100%);
 }
 
 body{
    margin: 0 auto;
-   background: #100e17;
-   font-family: "comfortaa-regular", Helvetica;
+   background: #0a0c12;
 }
 
 main{
@@ -59,16 +77,17 @@ h1{
 h2{
    margin: 0;
    padding: 5rem 0;
-   font-family: "comfortaa-bold", Helvetica;
-   font-weight: bolder;
+   font-family: "rubik-medium", Helvetica;
+   font-weight: normal;
+   letter-spacing: 0.1rem;
    text-transform: uppercase;
    text-align: center;
 }
 
 h3{
    display: inline-block;
-   font-family: "open-sans-regular";
-   font-weight: bolder;
+   font-family: "rubik-medium", Helvetica;
+   font-weight: normal;
    text-transform: uppercase;
    border-bottom: solid 0.1rem #666;
 }
@@ -95,13 +114,15 @@ h3{
    text-align: center;
    background-color: #fefefe;
    border-radius: 0.2rem;
+   font-family: "open-sans-regular", Helvetica;
+   font-weight: bold;
 }
 
 .close{
    float: right;
    font-size: 1.5rem;
    font-weight: bold;
-   color: #aaa;
+   color: #666;
 }
 
 .close:hover,
@@ -134,7 +155,7 @@ header{
 }
 
 .burger:hover div {
-   background: #333;
+   background: #00cacb;
    width: 2rem;
 }
 
@@ -158,10 +179,11 @@ header{
    display: block;
    position: absolute;
    bottom: 3rem;
-   left: 0.25rem;
+   left: 0.55rem;
    transform: rotate(-90deg);
    transition: bottom 0.5s ease;
-   font-family: "comfortaa-regular", Helvetica;
+   font-family: "rubik-regular";
+   font-weight: normal;
    font-size: 1.1rem;
    line-height: 2rem;
    text-transform: uppercase;
@@ -172,13 +194,13 @@ header{
 
 .social-button:hover{
    bottom: 3.5rem;
-   color: #111;
+   color: #333;
 }
 
 /* JS Button */
 #socialButton.show{
    bottom: 14rem;
-   color: #111;
+   color: #333;
 }
 
 .social-button span{
@@ -188,7 +210,7 @@ header{
    width: 2.2rem;
    height: 0.11rem;
    margin-right: 0.5rem;
-   background: #555;
+   background: #aaa;
    border-radius: 0.2rem;
 }
 
@@ -224,7 +246,7 @@ header{
 }
 
 .social-menu li a .svg-github{
-   fill: #555;
+   fill: #666;
 }
 
 .social-menu li a .svg-github:hover{
@@ -232,7 +254,7 @@ header{
 }
 
 .social-menu li a .svg-linkedin{
-   fill: #555;
+   fill: #666;
 }
 
 .social-menu li a .svg-linkedin:hover{
@@ -240,7 +262,7 @@ header{
 }
 
 .social-menu li a .svg-mail{
-   fill: #555;
+   fill: #666;
 }
 
 .social-menu li a .svg-mail:hover{
@@ -248,7 +270,7 @@ header{
 }
 
 .social-menu li a .svg-cv{
-   fill: #555;
+   fill: #666;
 }
 
 .social-menu li a .svg-cv:hover{
@@ -258,23 +280,58 @@ header{
 /* Présentation */
 .wrap-presentation p{
    font-family: "open-sans-regular", Helvetica;
+   font-weight: normal;
+}
+
+.wrap-presentation p strong{
+   font-family: "open-sans-semi-bold", Helvetica;
+   font-weight: normal;
 }
 
 /* Projets */
-.wrap-projet{
-   text-align: center;
+.wrapper-projet{
+   display: flex;
+   flex-wrap: wrap;
+   height: 100vh;
 }
 
-.wrap-projet div{
-   display: inline-block;
-   width: 200px;
-   height: 250px;
-   margin: 2rem;
-   background: #fff;
-   border-radius: 0.2rem;
+.projet{
+   width: 50%;
+   height: 50%;
+   overflow: hidden;
+}
+
+.projet a img{
+   width: 100%;
+   min-height: 100%;
+
+}
+
+.projet:nth-child(1){
+   background: #89d4d0;
+}
+
+.projet:nth-child(2){
+   background: #f3ab00;
+}
+
+.projet:nth-child(3){
+   background: #eaeaea;
+}
+
+.projet:nth-child(4){
+   background: #ffa5b4;
+}
+.projet:nth-child(5){
+   background: #d74329;
 }
 
 /* Contact */
+.wrapper-contact{
+   display: flex;
+   flex-wrap: wrap;
+   height: 100vh;
+}
 .wrap-contact{
    width: 50%;
    margin: 5rem auto;
@@ -295,9 +352,9 @@ header{
    top: 0.5rem;
    left: 0;
    text-transform: capitalize;
-   font-family: "open-sans-regular", Helvetica;
+   font-family: "rubik-regular", Helvetica;
+   font-weight: normal;
    font-size: 1.2rem;
-   font-weight: bolder;
    letter-spacing: 0.1rem;
    cursor: text;
    transition: 0.200s ease-in-out;
@@ -307,8 +364,6 @@ header{
    width: 100%;
    height: 3rem;
    padding: 0.5rem 0.1rem;
-   font-family: "comfortaa-bold", Helvetica;
-   font-size: 1rem;
    color: #fff;
    transition: 0.110s ease-in-out;
 }
@@ -320,6 +375,7 @@ header{
 .wrap-input .input:focus ~ label{
    top: -1rem;
    font-size: 0.9rem;
+   letter-spacing: normal;
 }
 
 .textarea{
@@ -340,35 +396,37 @@ header{
 .wrap-input .textarea:focus ~ label{
    top: -1rem;
    font-size: 0.9rem;
+   letter-spacing: normal;
 }
 
 .input[type=text],[type=email]{
    border: 0;
    border-bottom: 0.1rem solid #00cacb;
    background: transparent;
-   font-family: "comfortaa-regular", Helvetica;
+   font-family: "open-sans-italic", Helvetica;
+   font-weight: normal;
    font-size: 1.1rem;
 }
 
 .button{
    display: block;
-   width: 8rem;
    margin: 4rem auto;
-   padding: 0.5rem;
+   padding: 0.5rem 1rem;
    border: none;
    border-bottom: 0.1rem solid #00cacb;
    text-transform: capitalize;
-   font-family: "open-sans-regular", Helvetica;
+   font-family: "rubik-regular", Helvetica;
+   font-weight: normal;
    font-size: 1rem;
    color: #fff;
    outline: none;
    background: transparent;
    cursor: pointer;
-   letter-spacing: 0.2rem;
+   letter-spacing: 0.1rem;
    transition: 0.2s ease-in-out;
 }
 
 .button:hover{
-   letter-spacing: 0.1rem;
+   letter-spacing: normal;
    border-bottom: 0.2rem solid #19f6e8;
 }
