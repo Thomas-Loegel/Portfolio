@@ -302,22 +302,22 @@ header{
 }
 
 .skill:nth-child(1) svg{
-   transform: translate(0%,-250%);
+   transform: translate(0%,-270%);
 }
 .skill:nth-child(2) svg{
-   transform: translate(200%,-200%);
+   transform: translate(220%,-200%);
 }
 .skill:nth-child(3) svg{
    transform: translate(250%,0%);
 }
 .skill:nth-child(4) svg{
-   transform: translate(200%,200%);
+   transform: translate(220%,200%);
 }
 .skill:nth-child(5) svg{
-   transform: translate(0%,250%);
+   transform: translate(0%,220%);
 }
 .skill:nth-child(6) svg{
-   transform: translate(-200%,200%);
+   transform: translate(-200%,220%);
 }
 .skill:nth-child(7) svg{
    transform: translate(-250%,0%);
