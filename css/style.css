@@ -314,10 +314,10 @@ header{
    transform: translate(220%,200%);
 }
 .skill:nth-child(5) svg{
-   transform: translate(0%,220%);
+   transform: translate(-10%,220%);
 }
 .skill:nth-child(6) svg{
-   transform: translate(-200%,220%);
+   transform: translate(-200%,200%);
 }
 .skill:nth-child(7) svg{
    transform: translate(-250%,0%);
