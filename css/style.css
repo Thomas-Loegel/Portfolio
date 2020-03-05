@@ -30,6 +30,7 @@
    src: url("../asset/fonts/rubik-bold.ttf");
 }
 
+
 /* Global */
 *:before,
 *,
@@ -84,8 +85,8 @@ h3{
    font-family: "bisect", Helvetica;
    font-weight: normal;
    text-transform: uppercase;
-   border-bottom: solid 0.1rem #666;
 }
+
 
 /* Modal*/
 .wrap-modal{
@@ -126,6 +127,7 @@ h3{
    text-decoration: none;
    cursor: pointer;
 }
+
 
 /* Header */
 header{
@@ -177,7 +179,7 @@ header{
    left: 0.55rem;
    transform: rotate(-90deg);
    transition: bottom 0.5s ease;
-   font-family: "rubik-regular";
+   font-family: "rubik-medium";
    font-weight: normal;
    font-size: 1.1rem;
    line-height: 2rem;
@@ -243,34 +245,28 @@ header{
 .social-menu li a .svg-github{
    fill: #666;
 }
-
 .social-menu li a .svg-github:hover{
    fill: #333;
 }
-
 .social-menu li a .svg-linkedin{
    fill: #666;
 }
-
 .social-menu li a .svg-linkedin:hover{
    fill: #0E76A8;
 }
-
 .social-menu li a .svg-mail{
    fill: #666;
 }
-
 .social-menu li a .svg-mail:hover{
    fill: #00cacb;
 }
-
 .social-menu li a .svg-cv{
    fill: #666;
 }
-
 .social-menu li a .svg-cv:hover{
    fill: #e35e25;
 }
+
 
 /* Présentation */
 .wrap-presentation p{
@@ -283,45 +279,91 @@ header{
    font-weight: normal;
 }
 
-/* Compétences */
-.wrap-skill{
 
+/* Skill */
+.wrap-skill{
+   display: flex;
+   height: 60%;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
 }
 
-/* Projets */
-.wrapper-projet{
+.mask-skill{
+   display: block;
+   width: 5rem;
+   height: 5rem;
+   /* background: #0a0c12; */
+}
+
+.skill{
+   position: absolute;
+   z-index: -1;
+}
+
+.skill:nth-child(1) svg{
+   transform: translate(0%,-250%);
+}
+.skill:nth-child(2) svg{
+   transform: translate(200%,-200%);
+}
+.skill:nth-child(3) svg{
+   transform: translate(250%,0%);
+}
+.skill:nth-child(4) svg{
+   transform: translate(200%,200%);
+}
+.skill:nth-child(5) svg{
+   transform: translate(0%,250%);
+}
+.skill:nth-child(6) svg{
+   transform: translate(-200%,200%);
+}
+.skill:nth-child(7) svg{
+   transform: translate(-250%,0%);
+}
+.skill:nth-child(8) svg{
+   transform: translate(-200%,-200%);
+}
+
+
+
+
+
+/* Project */
+.wrapper-project{
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
    align-items: center;
 }
 
-.wrap-projet{
+.wrap-project{
    width: 50%;
    height: 50%;
 }
 
-.wrap-projet:hover ,.wrap-projet .projet:hover{
+.wrap-project:hover ,.wrap-project .project:hover{
    opacity: 0.90;
 }
 
-.wrap-projet:nth-child(1):hover img{
+/* Top Annimation Project */
+.wrap-project:nth-child(1):hover img{
    transform: scale(1.5) translate(100%,20%);
 }
+.wrap-project:nth-child(2):hover img{
+   transform: scale(1.5) translate(-30%,20%);
+}
 
-.wrap-projet:nth-child(3):hover img{
+/* Bottom Annimation Project */
+.wrap-project:nth-child(3):hover img{
    transform: scale(1.5) translate(100%,25%);
 }
-
-.wrap-projet:nth-child(2):hover img{
-   transform: scale(1.5) translate(-30%,15%);
+.wrap-project:nth-child(4):hover img{
+   transform: scale(1.5) translate(-30%,25%);
 }
 
-.wrap-projet:nth-child(4):hover img{
-   transform: scale(1.5) translate(-30%,15%);
-}
-
-/* 1st Section Projets */
+/* 1st Section Project */
 .nth-child-1:nth-child(1){
    background: #991c3b;
 }
@@ -335,6 +377,7 @@ header{
    background: #5f5147
 }
 
+/* 2nd Section Project */
 .nth-child-5:nth-child(1){
    background: #d31f44;
 }
@@ -348,14 +391,13 @@ header{
    background: #ffffff;
 }
 
-/* 2nd Section Projets */
-.projet{
+.project{
    width: 100%;
    height: 100%;
    overflow: hidden;
 }
 
-.projet img{
+.project img{
    width: 50%;
    min-height: 50%;
    position: relative;
