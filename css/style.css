@@ -301,21 +301,28 @@ header{
    align-items: center;
 }
 
-.projet{
+.wrap-projet{
    width: 40%;
    height: 40%;
+   border-radius: 0.2rem;
+   box-shadow: 0.6rem 0.6rem 0.3rem -0.25rem #fff;
+}
+
+.projet{
+   width: 100%;
+   height: 100%;
    overflow: hidden;
-   transition: 0.4s ease-in-out;
+   transition: 0.3s ease-in-out;
 }
 
 .projet:hover{
-   transform: perspective(30rem) translateZ(1rem);
+   transform: translate(0.6rem, 0.6rem);
 }
 
 .projet a img{
    width: 100%;
    min-height: 100%;
-   border-radius: 0.1rem;
+   border-radius: 0.2rem;
 }
 
 
