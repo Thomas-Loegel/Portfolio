@@ -59,10 +59,29 @@ section {
    color: #fff;
 }
 
+.wrap{
+   width: 40%;
+   margin: auto;
+   padding: 1rem;
+}
+
+.wrap-2{
+   width: 25%;
+   margin: 5rem auto;
+   padding: 1rem;
+}
+
+
 .wrapper{
-   width: 80rem;
    height: 100vh;
    margin: 0 auto;
+}
+
+.slice-presentation, .slice-talent, .slice-contact{
+   position: relative;
+   top: 7.2rem;
+   margin: 0 auto;
+   border-bottom: 0.12rem solid #19f6e8;
 }
 
 h1{
@@ -78,17 +97,7 @@ h2{
    letter-spacing: 0.1rem;
    text-transform: uppercase;
    text-align: center;
-}
-
-.slice-presentation, .slice-talent, .slice-contact{
-   position: relative;
-   top: 7.2rem;
-   width: 45rem;
-   margin: 0 auto;
-   border-bottom: 0.12rem solid #19f6e8;
-}
-.slice-talent, .slice-contact{
-   width: 30rem;
+   cursor: default;
 }
 
 
@@ -205,7 +214,7 @@ header{
    bottom: 3rem;
    left: 0.30rem;
    transform: rotate(-90deg);
-   transition: bottom 0.5s ease;
+   transition: bottom 0.4s ease;
    font-family: "rubik-medium";
    font-weight: normal;
    font-size: 1.2rem;
@@ -221,24 +230,36 @@ header{
    color: #666;
 }
 
+.social-button:hover span{
+   background: #00cacb;
+}
+
 /* JS Button */
 #socialButton.show{
    bottom: 14rem;
    left: -0.20rem;
-   color: #666;
+   color: #555;
    font-family: "bisect", Helvetica;
    font-weight: normal;
 }
 
+#socialButton.show span{
+   background: #00cacb;
+   width: 6rem;
+   left: -0.6rem;
+
+}
+
 .social-button span{
    position: absolute;
-   bottom: 1rem;
+   bottom: 0.9rem;
    left: -2.8rem;
    width: 2.2rem;
    height: 0.11rem;
    margin-right: 0.5rem;
    background: #aaa;
    border-radius: 0.2rem;
+   transition: 0.5s;
 }
 
 .social-nav{
@@ -252,7 +273,7 @@ header{
 
 /* JS Menu */
 #socialMenu.show{
-   bottom: -11rem;
+   bottom: -10rem;
 }
 
 .social-menu{
@@ -299,16 +320,19 @@ header{
 
 
 /* Présentation */
-.wrap-presentation p{
+.wrap p{
    font-family: "rubik-regular", Helvetica;
    font-weight: normal;
 }
 
-.wrap-presentation p strong{
+.wrap p strong{
    font-family: "rubik-medium", Helvetica;
    font-weight: normal;
 }
 
+.wrap p a{
+   color: #fff;
+}
 
 /* Skill */
 .wrap-skill{
@@ -436,13 +460,8 @@ header{
 
 
 /* Contact */
-.wrapper-contact{
-   display: flex;
-   flex-wrap: wrap;
-   height: 100vh;
-}
 .wrap-contact{
-   width: 50%;
+   width: 30%;
    margin: 5rem auto;
    padding: 1rem;
 }
@@ -479,6 +498,7 @@ header{
 
 .wrap-input .input:focus{
    border-bottom: 0.2rem solid #19f6e8;
+   outline:none;
 }
 
 .wrap-input .input:focus ~ label{
