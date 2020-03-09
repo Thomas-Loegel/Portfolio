@@ -39,9 +39,9 @@
 }
 
 html {
-   scroll-behavior: smooth;
+   /* scroll-behavior: smooth;
    scroll-snap-type: y mandatory;
-   scroll-snap-points-y: repeat(100%);
+   scroll-snap-points-y: repeat(100%); */
 }
 
 body{
@@ -53,16 +53,16 @@ main{
    margin-left: 5rem;
 }
 
-section {
+section{
    height: 100vh;
-   scroll-snap-align: start;
+   /* scroll-snap-align: start; */
    color: #fff;
 }
 
 .wrap-presentation{
    width: 40%;
-   margin: auto;
-   padding: 1rem;
+   margin: 0 auto;
+   padding: 0rem;
 }
 
 .wrap-skill{
@@ -76,7 +76,6 @@ section {
    margin: 0 auto;
    padding: 1rem;
 }
-
 
 .wrapper{
    height: 100vh;
@@ -207,19 +206,6 @@ header{
    width: 1.5rem;
 }
 
-/* Logo */
-/* .logo{
-   display: block;
-   position: absolute;
-   width: 5rem;
-   top:30rem;
-   text-align: center;
-   text-decoration: none;
-   color: #0a0c12;
-   font-family: "bisect";
-   font-weight: normal;
-   font-size: 3rem;
-} */
 
 /* Social */
 .social-button{
@@ -335,9 +321,11 @@ header{
 
 /* Présentation */
 .wrap-presentation p{
-   margin-bottom: 5rem;
+   margin: 3rem  0 ;
+   padding-left: 4rem;
    font-family: "rubik-regular", Helvetica;
    font-weight: normal;
+   line-height: 1.5rem;
 }
 
 .wrap-presentation p strong{
@@ -410,13 +398,6 @@ header{
    align-items: center;
 }
 
-.mask-skills{
-   display: block;
-   width: 5rem;
-   height: 5rem;
-   /* background: #0a0c12; */
-}
-
 .skill{
    position: absolute;
    z-index: -1;
@@ -432,13 +413,13 @@ header{
    transform: translate(200%,-50%);
 }
 .skill:nth-child(4) svg{
-   transform: translate(150%,150%);
+   transform: translate(150%,140%);
 }
 .skill:nth-child(5) svg{
    transform: translate(-50%,150%);
 }
 .skill:nth-child(6) svg{
-   transform: translate(-220%,150%);
+   transform: translate(-220%,140%);
 }
 .skill:nth-child(7) svg{
    transform: translate(-300%,-50%);
@@ -459,6 +440,7 @@ header{
    width: 50%;
    height: 50%;
    text-decoration: none;
+
 }
 
 .wrap-project a{
