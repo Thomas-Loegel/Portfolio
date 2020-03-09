@@ -59,15 +59,21 @@ section {
    color: #fff;
 }
 
-.wrap{
+.wrap-presentation{
    width: 40%;
    margin: auto;
    padding: 1rem;
 }
 
-.wrap-2{
+.wrap-skill{
    width: 25%;
-   margin: 5rem auto;
+   margin: auto;
+   padding: 1rem;
+}
+
+.wrap-contact{
+   width: 25%;
+   margin: 0 auto;
    padding: 1rem;
 }
 
@@ -108,6 +114,14 @@ h3{
    text-transform: uppercase;
 }
 
+h4{
+   margin: 0 0 0.5rem 0;
+   font-family: "rubik-bold", Helvetica;
+   font-weight: normal;
+   font-size: 3rem;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+}
 
 /* Modal*/
 .wrap-modal{
@@ -236,16 +250,16 @@ header{
 
 /* JS Button */
 #socialButton.show{
-   bottom: 14rem;
-   left: -0.20rem;
-   color: #555;
+   bottom: 12rem;
+   left: -0.25rem;
+   color: #444;
    font-family: "bisect", Helvetica;
    font-weight: normal;
 }
 
 #socialButton.show span{
    background: #00cacb;
-   width: 6rem;
+   width: 6.5rem;
    left: -0.6rem;
 
 }
@@ -320,30 +334,83 @@ header{
 
 
 /* Présentation */
-.wrap p{
+.wrap-presentation p{
+   margin-bottom: 5rem;
    font-family: "rubik-regular", Helvetica;
    font-weight: normal;
 }
 
-.wrap p strong{
+.wrap-presentation p strong{
    font-family: "rubik-medium", Helvetica;
    font-weight: normal;
 }
 
-.wrap p a{
+.wrap-presentation p a{
    color: #fff;
 }
 
-/* Skill */
-.wrap-skill{
+.wrap-cv{
+   height: 3rem;
+   margin: 0 auto;
+   position: relative;
+   top: 50%;
+   transform: translate(0%,50%);
+   width: 20rem;
+}
+
+.shape{
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -470;
+  stroke-width: 0.2rem;
+  stroke: #19f6e8;
+}
+
+.text{
+   display: block;
+   font-family: "rubik-medium", Helvetica;
+   font-weight: normal;
+   font-size: 22px;
+   letter-spacing: 0.2rem;
+   line-height: 32px;
+   position: relative;
+   top: -3rem;
+   left: 6.5rem;
+}
+
+.text a{
+   text-decoration: none;
+   color: #fff;
+}
+
+@keyframes draw{
+   0%{
+      stroke-dasharray: 140 500;
+      stroke-dashoffset: -470;
+      stroke-width: 8px;
+   }
+   100%{
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 2px;
+   }
+}
+
+.wrap-cv:hover .shape{
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+
+/* SKILLS */
+.wrap-skills{
+   padding-top: 15rem;
    display: flex;
-   height: 60%;
-   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
 }
 
-.mask-skill{
+.mask-skills{
    display: block;
    width: 5rem;
    height: 5rem;
@@ -356,32 +423,31 @@ header{
 }
 
 .skill:nth-child(1) svg{
-   transform: translate(0%,-270%);
+   transform: translate(-50%,-300%);
 }
 .skill:nth-child(2) svg{
-   transform: translate(220%,-200%);
+   transform: translate(150%,-220%);
 }
 .skill:nth-child(3) svg{
-   transform: translate(250%,0%);
+   transform: translate(200%,-50%);
 }
 .skill:nth-child(4) svg{
-   transform: translate(220%,200%);
+   transform: translate(150%,150%);
 }
 .skill:nth-child(5) svg{
-   transform: translate(-10%,220%);
+   transform: translate(-50%,150%);
 }
 .skill:nth-child(6) svg{
-   transform: translate(-200%,200%);
+   transform: translate(-220%,150%);
 }
 .skill:nth-child(7) svg{
-   transform: translate(-250%,0%);
+   transform: translate(-300%,-50%);
 }
 .skill:nth-child(8) svg{
-   transform: translate(-200%,-200%);
+   transform: translate(-220%,-200%);
 }
 
-
-/* Project */
+/* PROJECTS */
 .wrapper-project{
    display: flex;
    flex-wrap: wrap;
@@ -392,10 +458,44 @@ header{
 .wrap-project{
    width: 50%;
    height: 50%;
+   text-decoration: none;
 }
 
-.wrap-project:hover ,.wrap-project .project:hover{
-   opacity: 0.90;
+.wrap-project a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.wrap-project:nth-child(odd) .info-project{
+   position: relative;
+   top: -10rem;
+   left: -35rem;
+   padding: 0 2rem;
+   transition: 0.8s ease-out;
+}
+
+.wrap-project:nth-child(odd):hover .info-project{
+   left: 2rem;
+}
+
+.wrap-project:nth-child(even) .info-project{
+   position: relative;
+   top: -10rem;
+   right: -30rem;
+   padding: 0 2rem;
+   text-align: right;
+   transition: 0.5s ease-out;
+}
+
+.wrap-project:nth-child(even):hover .info-project{
+   right: 2rem;
+}
+
+.info-project p{
+   margin: 0;
+   font-family: "rubik-italic", Helvetica;
+   font-weight: normal;
+   letter-spacing: .10rem;
 }
 
 /* Top Annimation Project */
@@ -422,7 +522,7 @@ header{
    background: #737e9d;
 }
 .nth-child-3:nth-child(3){
-   background: #ecefda;
+   background: #54505f;
 }
 .nth-child-4:nth-child(4){
    background: #5f5147
@@ -455,7 +555,7 @@ header{
    top: 0;
    left: 0;
    transform: translate(50%,30%);
-   transition: 5s ease-out;
+   transition: 1s ease-out;
 }
 
 
