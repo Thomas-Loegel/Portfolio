@@ -71,18 +71,21 @@ section{
    padding: 1rem;
 }
 
-.wrap-contact{
-   width: 25%;
-   margin: 0 auto;
-   padding: 1rem;
-}
-
 .wrapper{
    height: 100vh;
    margin: 0 auto;
 }
 
-.slice-presentation, .slice-talent, .slice-contact{
+.slice-presentation, .slice-talent{
+   width: 90%;
+   position: relative;
+   top: 7.2rem;
+   margin: 0 auto;
+   border-bottom: 0.12rem solid #19f6e8;
+}
+
+.slice-contact{
+   width: 80%;
    position: relative;
    top: 7.2rem;
    margin: 0 auto;
@@ -206,13 +209,12 @@ header{
    width: 1.5rem;
 }
 
-.top-bar{
+.top-menu{
 
 }
 
 /* SOCIAL */
 .social-button{
-   display: block;
    position: absolute;
    bottom: 3rem;
    left: 0.30rem;
@@ -341,12 +343,13 @@ header{
 }
 
 .wrap-cv{
-   height: 3rem;
-   margin: 0 auto;
    position: relative;
    top: 50%;
    transform: translate(0%,50%);
    width: 20rem;
+   height: 3rem;
+   margin: 0 auto;
+   cursor: pointer;
 }
 
 .shape{
@@ -622,6 +625,10 @@ header{
    font-family: "rubik-italic", Helvetica;
    font-weight: normal;
    font-size: 1.1rem;
+}
+
+textarea:focus{
+   outline: 0;
 }
 
 .button{
