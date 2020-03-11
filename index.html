@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <meta charset="UTF-8">
+   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+   <link rel="icon" href="asset/img/favicon.ico">
    <link rel="stylesheet" href="asset/css/style.css">
 
-   <title>Thomas Loegel | Portfolio </title>
+   <title>Thomas Loegel | Portfolio Développeur Web</title>
 </head>
 
 <body>
+   <div id="topMenu" class="top-menu">
+      <a href="">home</a>
+      <a href="">talents</a>
+      <a href="">projets</a>
+      <a href="">contact</a>
+   </div>
+
    <header>
-      <a class="burger">
+      <a id="burger" class="burger">
          <div class="top-bar"></div>
          <div class="middle-bar"></div>
          <div class="bottom-bar"></div>
       </a>
 
-      <div class="top-menu">
 
-      </div>
       <!-- <a class="logo" href="#">tl</a> -->
 
       <a id="socialButton" class="social-button"><span></span>social</a>
@@ -28,7 +34,7 @@
       <nav id="socialMenu" class="social-nav">
          <ul class="social-menu">
             <li>
-               <a href="https://www.linkedin.com/in/thomas-loegel-095b61194/" target="_blank">
+               <a href="https://www.linkedin.com/in/thomas-loegel-095b61194/" target="_blank" rel="noopener noreferrer">
                   <svg class="svg-linkedin" version="1.1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" width="25px" height="25px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
                   <path d="M568.286,90H43.578C19.535,90,0,109.808,0,134.124v523.752C0,682.192,19.535,702,43.578,702h524.708
@@ -41,7 +47,7 @@
                </a>
             </li>
             <li>
-               <a href="https://github.com/Thomas-Loegel" target="_blank">
+               <a href="https://github.com/Thomas-Loegel" target="_blank" rel="noopener noreferrer">
                   <svg class="svg-github" version="1.1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" width="25px" height="25px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
                   <path d="M546.429,90H65.571C29.371,90,0,119.371,0,155.571v480.857C0,672.63,29.371,702,65.571,702h480.857
@@ -122,7 +128,7 @@
                 <rect class="shape" height="60" width="320" />
               </svg>
                <div class="text">
-                  <a href="asset/doc/cv_loegel_thomas.pdf" target="_blank">
+                  <a href="asset/doc/cv_loegel_thomas.pdf" target="_blank" rel="noopener noreferrer">
                      Mon C.V
                   </a>
                </div>
@@ -316,7 +322,7 @@
 
       <section class="wrapper-project">
          <div class="wrap-project nth-child-1">
-            <a href="#">
+            <a href="">
                <div class="project">
                   <img src="asset/img/alloJati.png" alt="Allo JATI">
                   <div class="info-project">
@@ -328,7 +334,7 @@
          </div>
 
          <div class="wrap-project nth-child-2">
-            <a href="#">
+            <a href="">
                <div class="project">
                   <img src="asset/img/yesTransfert.png" alt="Yes Transfert">
                   <div class="info-project">
@@ -340,7 +346,7 @@
          </div>
 
          <div class="wrap-project nth-child-3">
-            <a href="#">
+            <a href="">
                <div class="project">
                   <img src="asset/img/formulaire.png" alt="Formulaire">
                   <div class="info-project">
@@ -352,7 +358,7 @@
          </div>
 
          <div class="wrap-project nth-child-4">
-            <a href="#">
+            <a href="">
                <div class="project">
                   <img src="asset/img/craftMan.png" alt="Craft Man">
                   <div class="info-project">
@@ -366,7 +372,7 @@
 
       <section class="wrapper-project">
          <div class="wrap-project nth-child-5">
-            <a href="#">
+            <a href="">
                <div class="project">
                   <img src="asset/img/integrationAcs.png" alt="Intégration ACS">
                   <div class="info-project">
@@ -378,7 +384,7 @@
          </div>
 
          <div class="wrap-project nth-child-6">
-            <a href="#">
+            <a href="">
                <div class="project">
                   <img src="asset/img/blueEasy.png" alt="Blue Easy">
                   <div class="info-project">
@@ -390,7 +396,7 @@
          </div>
 
          <div class="wrap-project nth-child-7">
-            <a href="#">
+            <a href="">
                <div class="project">
                   <img src="asset/img/guideDuCodeur.png" alt="Guide du Codeur">
                   <div class="info-project">
@@ -402,7 +408,7 @@
          </div>
 
          <div class="wrap-project nth-child-8">
-            <a href="#">
+            <a href="">
                <div class="project">
                   <img src="asset/img/emptyProject.png" alt="Work In Progress">
                </div>
@@ -417,20 +423,20 @@
          </div>
 
          <div class="wrap-contact">
-            <form class="contact-form" action="POST">
+            <form class="contact-form" action="" method="POST">
                <div class="wrap-input">
-                  <input id="name" class="input" name="name" type="text">
-                  <label for="name">nom</label>
+                  <input class="input" name="name" type="text">
+                  <label for="name" class="label">nom</label>
                </div>
 
                <div class="wrap-input">
-                  <input id="mail" class="input" name="mail" type="email">
-                  <label for="mail">mail</label>
+                  <input class="input" name="mail" type="email">
+                  <label for="mail" class="label">mail</label>
                </div>
 
                <div class="wrap-input">
-                  <textarea id="message" class="textarea" name="message"></textarea>
-                  <label for="message">message</label>
+                  <textarea class="textarea" name="message"></textarea>
+                  <label for="message" id="label">message</label>
                </div>
 
                <button class="button" type="button" name="button">envoyer</button>

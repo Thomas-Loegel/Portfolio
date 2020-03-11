@@ -42,11 +42,14 @@ html {
    /* scroll-behavior: smooth;
    scroll-snap-type: y mandatory;
    scroll-snap-points-y: repeat(100%); */
+   font-size: 16px;
 }
 
 body{
    margin: 0 auto;
    background: #0a0c12;
+   font-family: "rubik-regular", Helvetica;
+   font-weight: normal;
 }
 
 main{
@@ -165,6 +168,35 @@ h4{
    cursor: pointer;
 }
 
+/* TOP MENU */
+.top-menu{
+   display: inline-block;
+   padding: 1rem 0;
+   cursor: default;
+   background: #fff;
+   position: fixed;
+   top: 0;
+   left: -50rem;
+   z-index: 50;
+   transition: 0.5s;
+}
+
+.top-menu a{
+   margin: 0 1.5rem;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-family: "rubik-medium", Helvetica;
+   font-weight: normal;
+   color: #666;
+}
+
+.top-menu a:hover{
+   color: #00cacb;
+}
+
+#topMenu.slide{
+   left: 5rem;
+}
 
 /* HEADER */
 header{
@@ -173,6 +205,7 @@ header{
    width: 80px;
    height: 100vh;
    background: #fff;
+   z-index: 100;
 }
 
 .burger{
@@ -218,6 +251,7 @@ header{
    position: absolute;
    bottom: 3rem;
    left: 0.30rem;
+   -webkit-transform: rotate(-90deg);
    transform: rotate(-90deg);
    transition: bottom 0.4s ease;
    font-family: "rubik-medium";
@@ -383,6 +417,7 @@ header{
       stroke-dashoffset: -470;
       stroke-width: 8px;
    }
+
    100%{
       stroke-dasharray: 760;
       stroke-dashoffset: 0;
@@ -565,7 +600,7 @@ header{
 
 .wrap-input label{
    position: absolute;
-   top: 0.5rem;
+   top: 0;
    left: 0;
    text-transform: capitalize;
    font-family: "rubik-regular", Helvetica;
@@ -590,6 +625,12 @@ header{
 }
 
 .wrap-input .input:focus ~ label{
+   top: -1rem;
+   font-size: 0.9rem;
+   letter-spacing: normal;
+}
+
+.focus{
    top: -1rem;
    font-size: 0.9rem;
    letter-spacing: normal;
