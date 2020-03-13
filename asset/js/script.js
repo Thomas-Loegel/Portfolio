@@ -49,8 +49,9 @@ window.onclick = function(event) {
 
 
 
+// Typing Text
 document.addEventListener('DOMContentLoaded',function(event){
-   // array with texts to type in typewriter
+   // Array with texts to type in typewriter
    let dataText = [
       "le travail d'équipe !",
       "résoudre des problèmatiques !",
@@ -62,42 +63,43 @@ document.addEventListener('DOMContentLoaded',function(event){
       "faire de la veille efficace !",
    ];
 
-   // type one text in the typwriter
-   // keeps calling itself until the text is finished
+   // Type one text in the typwriter
+   // Keeps calling itself until the text is finished
    function typeWriter(text, i, fnCallback) {
-      // chekc if text isn't finished yet
+      // Chekc if text isn't finished yet
       if (i < (text.length)) {
-         // add next character to h1
+         // Add next character to h1
          document.getElementById("typing").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
 
-         // wait for a while and call this function again for next character
+         // Wait for a while and call this function again for next character
          setTimeout(function() {
             typeWriter(text, i + 1, fnCallback)
          }, 50);
       }
-      // text finished, call callback if there is a callback function
+      // Text finished, call callback if there is a callback function
       else if (typeof fnCallback == 'function') {
          // call callback after timeout
          setTimeout(fnCallback, 2000);
       }
    }
-   // start a typewriter animation for a text in the dataText array
+
+   // Start a typewriter animation for a text in the dataText array
    function StartTextAnimation(i) {
       if (typeof dataText[i] == 'undefined'){
          setTimeout(function() {
             StartTextAnimation(0);
          }, 50);
       }
-      // check if dataText[i] exists
+      // Check if dataText[i] exists
       if (i < dataText[i].length) {
-         // text exists! start typewriter animation
+         // Text exists! start typewriter animation
          typeWriter(dataText[i], 0, function(){
-            // after callback (and whole text has been animated), start next text
+            // After callback (and whole text has been animated), start next text
             StartTextAnimation(i + 1);
          });
       }
    }
-   // start the text animation
+   // Start the text animation
    StartTextAnimation(0);
 });
 
@@ -123,23 +125,14 @@ function nameFocus() {
   nameLabel.style.top = '-1rem';
   nameLabel.style.fontSize = '0.9rem';
 }
+
 function mailFocus() {
   mailLabel.style.top = '-1rem';
   mailLabel.style.fontSize = '0.9rem';
 }
+
 function messageFocus() {
   messageLabel.style.top = '-1rem';
   messageLabel.style.fontSize = '0.9rem';
   message.style.height = '10rem';
 }
-
-
-
-
-
-
-
-
-
-
-//

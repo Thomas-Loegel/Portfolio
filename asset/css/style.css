@@ -101,7 +101,7 @@ h1{
 h2{
    margin: 0;
    padding: 5rem 0;
-   font-family: "bisect";
+   font-family: "bisect", Helvetica;;
    font-weight: normal;
    font-size: 4rem;
    letter-spacing: 0.1rem;
@@ -184,7 +184,7 @@ h4{
    margin: 0 1.5rem;
    text-decoration: none;
    text-transform: uppercase;
-   font-family: "rubik-medium", Helvetica;
+   font-family: "rubik-medium-italic", Helvetica;
    font-weight: normal;
    color: #666;
 }
@@ -197,6 +197,10 @@ h4{
    left: 5rem;
 }
 
+#burger.slide div.middle-bar{
+   background: #00cacb;
+}
+
 #burger.slide div{
    width: 2rem;
    background: #00cacb;
@@ -207,7 +211,7 @@ h4{
 }
 
 #burger.slide .middle-bar{
-
+   margin: 0.1rem;
 }
 
 #burger.slide .bottom-bar{
@@ -264,7 +268,7 @@ header{
    -webkit-transform: rotate(-90deg);
    transform: rotate(-90deg);
    transition: bottom 0.4s ease;
-   font-family: "rubik-medium";
+   font-family: "rubik-medium", Helvetica;
    font-weight: normal;
    font-size: 1.2rem;
    line-height: 2rem;
