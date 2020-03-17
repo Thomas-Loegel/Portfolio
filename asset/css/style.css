@@ -56,7 +56,7 @@ main{
 }
 
 section{
-   height: 100vh;
+   min-height: 100vh;
    /* scroll-snap-align: start; */
    color: #fff;
 }
@@ -79,12 +79,20 @@ section{
 }
 
 .wrapper{
-   height: 100vh;
+   min-height: 100vh;
    margin: 0 auto;
 }
 
-.slice-presentation, .slice-talent{
+.slice-presentation{
    width: 70%;
+   position: relative;
+   top: 7.2rem;
+   margin: 0 auto;
+   border-bottom: 0.12rem solid #19f6e8;
+}
+
+.slice-talent{
+   width: 90%;
    position: relative;
    top: 7.2rem;
    margin: 0 auto;
@@ -456,7 +464,7 @@ header{
 
 /* SKILLS */
 .wrap-skills{
-   padding-top: 15rem;
+   padding: 15rem 0;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -494,6 +502,7 @@ header{
 
 /* PROJECTS */
 .wrapper-project{
+   height: 100vh;
    display: flex;
    flex-wrap: wrap;
 }
