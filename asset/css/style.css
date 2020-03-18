@@ -365,7 +365,7 @@ header{
    fill: #666;
 }
 .social-menu li a .svg-github:hover{
-   fill: #333;
+   fill: #000;
 }
 .social-menu li a .svg-linkedin{
    fill: #666;
@@ -672,7 +672,7 @@ header{
    border: 0;
    border-bottom: 0.1rem solid #00cacb;
    background: transparent;
-   transition: 0.5s ease-in-out;
+   transition: 0.3s ease-in-out;
    font-family: "rubik-italic", Helvetica;
    font-weight: normal;
 }
