@@ -40,8 +40,6 @@
 
 html {
    scroll-behavior: smooth;
-   /* scroll-snap-type: y mandatory;
-   scroll-snap-points-y: repeat(100%); */
 }
 
 body{
@@ -56,7 +54,7 @@ main{
 }
 
 section{
-   min-height: 100vh;
+   height: 100vh;
    /* scroll-snap-align: start; */
    color: #fff;
 }
@@ -79,7 +77,7 @@ section{
 }
 
 .wrapper{
-   min-height: 100vh;
+   height: 100vh;
    margin: 0 auto;
 }
 
@@ -100,6 +98,7 @@ section{
 }
 
 .slice-contact{
+   height: initial;
    width: 80%;
    position: relative;
    top: 7.2rem;
@@ -315,7 +314,6 @@ header{
    background: #00cacb;
    width: 6.5rem;
    left: -0.6rem;
-
 }
 
 .social-button span{
