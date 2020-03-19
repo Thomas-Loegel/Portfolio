@@ -54,6 +54,10 @@
       padding: 1rem;
    }
 
+   .wrap-skills{
+      margin-top: 5rem;
+   }
+
    .wrapper-contact{
 
    }
@@ -79,6 +83,10 @@
       text-align: center;
    }
 
+   .project img{
+      width: 50%;
+      height:50%;
+   }
 
 
 }
